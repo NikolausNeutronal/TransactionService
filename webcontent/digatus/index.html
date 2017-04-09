@@ -1,0 +1,97 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TransactionService Tester</title>
+</head>
+<body>
+
+<h3>TransactionService Tester</H3>
+<script src="Transaction.js"></script>
+<script src="TransactionTester.js"></script>
+
+<table border="1">
+	<tr>
+		<td>parent_id</td>
+		<td colspan="2">
+			<input type="text" id="transaction_parent_id"></input>
+		</td> 
+	</tr>
+	<tr>
+		<td>amount</td>
+		<td colspan="2">
+			<input type="text" id="transaction_amount"></input>
+		</td> 
+	</tr>
+	<tr>
+		<td>type</td>
+		<td colspan="2">
+			<input type="text" id="transaction_type"></input>
+		</td> 
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input type="button" value="putTransaction" onclick="new TransactionTester().putTransaction();">
+		</td>
+		<td id="putResponse" >
+		</td>
+	</tr>
+</table>
+
+<br>
+
+<table border="1">
+	<tr>
+		<td>search_id</td>
+		<td colspan="2">
+			<input type="text" id="search_id"></input>
+		</td> 
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input type="button" value="getById" onclick="new TransactionTester().getTransactionById();">
+		</td>
+		<td id="idResponse" >
+		</td>
+	</tr>
+</table>
+
+<br>
+
+<table border="1">
+	<tr>
+		<td>search_type</td>
+		<td colspan="2">
+			<input type="text" id="search_type"></input>
+		</td> 
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input type="button" value="getIdsByType" onclick="new TransactionTester().getIdsByType();">
+		</td>
+		<td id="typeResponse" >
+		</td>
+	</tr>
+</table>
+
+<br>
+
+<table border="1">
+	<tr>
+		<td>sum_id</td>
+		<td colspan="2">
+			<input type="text" id="sum_id"></input>
+		</td> 
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input type="button" value="sumById" onclick="new TransactionTester().sumById();">
+		</td>
+		<td id="sumResponse" >
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
