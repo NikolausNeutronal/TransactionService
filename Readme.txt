@@ -42,3 +42,7 @@ Um den Service zu testen
 4. Testen
 	http://localhost:8080/digatus -> index.html kleiner Testclient, der put und get methoden mit minimaler GUI aufruft
 	http://localhost:8080/digatus/transactionservice -> angefordertes Backend
+
+
+5. Anmerkung
+	Der Service speichert nicht persistent. Alle gesetzten Transactionen werden nur im Arbeitsspeicher gehalten und gehen bei einem Tomcat restart verloren.
