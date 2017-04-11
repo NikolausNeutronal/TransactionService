@@ -36,6 +36,7 @@ Um den Service zu testen
 	- Windows mit XAMPP tomcat im Control Pane stoppen und neu starten
 		
 	Info:
+	Tomcat liesst die neue "web.xml" aus und leitet im "digatus"-Projekt alle HTTP-Request mit der Endung 
 	"transactionservice/*" an das TransactionServlet weiter.
 	
 4. Testen
